@@ -1,0 +1,185 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+}
+header {
+    margin-left: 41px;
+}
+h3 {
+    text-align: center;
+    font: Bold 22px/27px Montserrat;
+    letter-spacing: 0;
+    color:black;
+    background: #FA382F 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: fit-content;
+    margin: auto;
+    padding: 4px;
+    
+    
+    /*color: #FFFFFF;  fr designkoden
+    opacity: 1;fr designkoden*/
+   /*font-family: 'Montserrat', sans-serif;
+   font-weight: bold;*/
+}
+
+.greet {
+    background: #F4F4F4;
+   
+}
+
+.greet p {
+
+   /* width: 80%;*/
+    height: auto;
+    text-align: left;
+    font: Regular 17px/29px Montserrat;
+    
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    padding: 36.5px;
+}
+
+.tech {
+    margin: 36px;
+    text-align: center;
+}
+
+.tech h6 {
+    text-align: center;
+    font: Regular 17px/29px Montserrat;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+}
+
+.projects {
+    background: #F4F4F4;
+    width: 100%;
+    height: 150px;
+    padding: 36.5px;
+}
+
+.about {
+    height: 150px;
+    margin-top: 50px;
+}
+
+.skills {
+    background: #F4F4F4;
+    
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    padding: 36.5px 0;
+}
+.skills h3 {
+    width: 100%;  /*** width: fit-content för den röda rutan? ***/
+    margin-bottom: 36.5px;
+}
+.code {
+    width: 150px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+.code p {
+    font: Regular 17px/29px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+}
+.toolbox {
+    width: 150px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+.toolbox p {
+    font: Regular 17px/29px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+}
+.more {
+    width: 150px;
+    height: auto;
+    margin-top: 36.5px;
+    margin-right: 30px;
+    margin-left: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+.more p {
+    font: Regular 17px/29px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+}
+.upcomming {
+    width: 150px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+.upcomming p {
+    font: Regular 17px/29px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.media {
+    margin: 36.5px;
+}
+
+
+.stack-Owerflow {
+    top: 4712px;
+left: 259px;
+width: 59px;
+height: 58px;
+background: grey;
+/*background: #FFFFFF 0% 0% no-repeat padding-box;*/
+border: 3px solid #FF0000;
+opacity: 1;
+}
+
+footer {
+    background-color: #FDDFE7;
+    /*font-family: 'Montserrat', sans-serif;*/
+
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 36.5px;
+    text-align: center;
+    /*font: Bold 17px/29px Roboto;*/
+    font-family: Roboto;
+    font-size: 17px;
+    letter-spacing: 0;
+   
+}
+
+
+@media (min-width:651) {
+    h3 {
+        font: Bold 48px/58px Montserrat;
+    }
+
+    .greet {
+        width: 1088px;
+        height: 192px;
+        font-size: 30px;
+    }  
+    .greet p {
+        font: Regular 30px/50px Montserrat;
+    }
+}
