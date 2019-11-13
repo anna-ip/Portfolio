@@ -7,14 +7,76 @@ body {
     margin: 0;
 }
 header {
+    display: flex;
+    flex-direction: column;
+    height: 508px;
+    background-image: url("assets/viktoria-sotsugova-NJmER3uhUdk-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-color: #023e2d;
+    color: #FFFFFF;
+    
+}
+
+.header-Icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 105px;
+    padding-right: 37px;
+}
+.stack-Icon {
+    border: 3px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 5px;
+}
+.linked-Icon {
+    border: 3px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+}
+   
+.github-Icon {
+    border: 3px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 5px;
+}
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+header p {
+    font: Regular 13px/15px Roboto;
     margin-left: 41px;
 }
+
+header h6 {
+    text-align: left;
+    font: Bold 13px/15px Roboto;
+    letter-spacing: 0.52px;
+    margin-left: 17.8px;
+}
+
+header h1 {
+    margin: 0 0 0 41px;
+    text-align: left;
+    font: Bold 40px/49px Montserrat;
+    letter-spacing: 0;
+    /*color: #FFFFFF;*/
+    opacity: 1;
+}
+
+
 h3 {
     text-align: center;
     font: Bold 22px/27px Montserrat;
     letter-spacing: 0;
-    color:black;
-    background: #FA382F 0% 0% no-repeat padding-box;
+    color:#FFFFFF;
+    background: #ae0618 0% 0% no-repeat padding-box;
     opacity: 1;
     width: fit-content;
     margin: auto;
@@ -38,7 +100,6 @@ h3 {
     height: auto;
     text-align: left;
     font: Regular 17px/29px Montserrat;
-    
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
@@ -59,11 +120,42 @@ h3 {
     opacity: 1;
 }
 
+/***** Portfolio part ******/
 .projects {
     background: #F4F4F4;
     width: 100%;
-    height: 150px;
+    height: auto;
     padding: 36.5px;
+}
+.project-Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.one, .two, .three, .four {
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 42px;
+}
+ 
+
+.project-Text {
+    display: flex;
+    align-items: baseline;
+
+}
+
+h5 {
+    width: fit-content;
+    height: 17px;
+    background: #FDDFE7 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.technique{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .about {
@@ -73,15 +165,14 @@ h3 {
 
 .skills {
     background: #F4F4F4;
-    
+    padding: 36.5px;
+}
+
+.skill-container {
     display: flex;
     /*flex-direction: column;*/
     flex-wrap: wrap;
-    padding: 36.5px 0;
-}
-.skills h3 {
-    width: 100%;  /*** width: fit-content för den röda rutan? ***/
-    margin-bottom: 36.5px;
+    margin-top: 36px;
 }
 .code {
     width: 150px;
@@ -140,23 +231,104 @@ h3 {
 .media {
     margin: 36.5px;
 }
+.media-Icons {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 36px; */
 
-
-.stack-Owerflow {
-    top: 4712px;
-left: 259px;
-width: 59px;
-height: 58px;
-background: grey;
-/*background: #FFFFFF 0% 0% no-repeat padding-box;*/
-border: 3px solid #FF0000;
-opacity: 1;
+    /***Susannas version***/
+   /* margin-top: 10%;
+    width: 40px;
+    height: 39px;
+    border-radius: 100%;
+    border: 2px solid #fa382f;*/
 }
 
-footer {
-    background-color: #FDDFE7;
-    /*font-family: 'Montserrat', sans-serif;*/
 
+
+span .stack-Owerflow {
+    width: 70px;
+  height: 70px;
+  border: 3px solid #fa382f;
+  border-radius: 50%;
+  display: inline-block; 
+
+
+}
+span .git-hub {
+    width: 70px;
+  height: 70px;
+  border: 3px solid #fa382f;
+  border-radius: 50%;
+  display: inline-block; 
+}
+  /***Susannas version**/
+  /*color: white;
+  position: relative;
+  top: 7px;
+  left: 7px;
+  width: 20px;
+  height: 20px; */
+
+
+
+span svg {
+    margin: 11px 0 0 15px;
+}
+
+    
+
+
+/** HA kvar **/
+span svg path {
+    fill: #fa382f;
+  }
+/*
+svg {
+    /*top: 4712px;
+    left: 156px;*/
+    /*width: 59px;
+    height: 58px;*/
+    /*color: #FA382F;
+    background: #FFFFFF 0% 0% no-repeat padding-box;*/
+   /* border: 3px solid #FF0000;
+    border-radius: 50%;
+    opacity: 1;*/
+    /*background: transparent url('assets/iconmonstr-linkedin-1/iconmonstr-linkedin-1.png') 0% 0% no-repeat padding-box;*/
+    /*fill: #FA382F
+    width: 70px;
+    height: 70px;
+    border: 3px solid #fa382f;
+    border-radius: 50%;
+    display: inline-block;
+}*/
+
+
+/*.media, .a {
+    fill: #FA382F;
+}*/
+
+/*img.stack-Icon {
+padding: 10px;
+} */
+
+
+/*
+.stack-Owerflow {
+    top: 4712px;
+    left: 259px;
+    width: 59px;
+    height: 58px;
+    /*background: grey;*/
+    /*background: #FA382F 0% 0% no-repeat padding-box;*/
+   /* border: 3px solid #FF0000;
+    opacity: 1;
+    fill: #FA382F;
+}*/
+
+footer {
+    background-color: #f2d3da;
     color: #FFFFFF;
     opacity: 1;
     padding: 36.5px;
@@ -164,6 +336,7 @@ footer {
     /*font: Bold 17px/29px Roboto;*/
     font-family: Roboto;
     font-size: 17px;
+    font-display: bold;
     letter-spacing: 0;
    
 }
@@ -181,5 +354,9 @@ footer {
     }  
     .greet p {
         font: Regular 30px/50px Montserrat;
+    }
+    .one, .two, .three, .four {
+       
+        margin: 36px;
     }
 }
