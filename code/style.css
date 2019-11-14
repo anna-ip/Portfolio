@@ -2,20 +2,40 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
 }
+.top-part {
+    height: auto;
+}
+/*** Header ****/
 header {
     display: flex;
     flex-direction: column;
     height: 508px;
     background-image: url("assets/viktoria-sotsugova-NJmER3uhUdk-unsplash\ \(1\).jpg");
+    z-index: -1;
     background-size: cover;
     background-color: #023e2d;
     color: #FFFFFF;
     
 }
+/**** Icons in the Header ****/
+.circles{
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+  }
 
 .header-Icons {
     display: flex;
@@ -23,26 +43,7 @@ header {
     padding-top: 105px;
     padding-right: 37px;
 }
-.stack-Icon {
-    border: 3px solid #FFFFFF;
-    opacity: 1;
-    border-radius: 50%;
-    padding: 5px;
-}
-.linked-Icon {
-    border: 3px solid #FFFFFF;
-    opacity: 1;
-    border-radius: 50%;
-    margin: 0 5px;
-    padding: 5px;
-}
-   
-.github-Icon {
-    border: 3px solid #FFFFFF;
-    opacity: 1;
-    border-radius: 50%;
-    padding: 5px;
-}
+
 .name {
     display: flex;
     flex-direction: row;
@@ -70,7 +71,26 @@ header h1 {
     opacity: 1;
 }
 
+.profile-img {
+    width: 162px;
+    height: 162px;
+    background-color: none;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 37px;
+    margin-top: 20px;
+    margin-left: auto;
+    z-index: 0;
+    
+}
 
+
+
+
+/**** Info text / Greet ***/
 h3 {
     text-align: center;
     font: Bold 22px/27px Montserrat;
@@ -80,23 +100,18 @@ h3 {
     opacity: 1;
     width: fit-content;
     margin: auto;
-    padding: 4px;
+    padding: 0.5%;
     
-    
-    /*color: #FFFFFF;  fr designkoden
-    opacity: 1;fr designkoden*/
-   /*font-family: 'Montserrat', sans-serif;
-   font-weight: bold;*/
 }
 
 .greet {
     background: #F4F4F4;
+    z-index: -1;
+    position: inherit;
    
 }
 
 .greet p {
-
-   /* width: 80%;*/
     height: auto;
     text-align: left;
     font: Regular 17px/29px Montserrat;
@@ -104,28 +119,38 @@ h3 {
     color: #000000;
     opacity: 1;
     padding: 36.5px;
+    margin: 0;
 }
 
+
+
+/**** Tech skills part   ****/
 .tech {
-    margin: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 7%;
     text-align: center;
 }
 
-.tech h6 {
+.tech h4 {
     text-align: center;
     font: Regular 17px/29px Montserrat;
     font-size: 17px;
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
+    margin-top: 36.5px;
 }
+
+
 
 /***** Portfolio part ******/
 .projects {
     background: #F4F4F4;
     width: 100%;
     height: auto;
-    padding: 36.5px;
+    padding: 7%;
 }
 .project-Container {
     display: flex;
@@ -138,12 +163,10 @@ h3 {
     width: 300px;
     margin-top: 42px;
 }
- 
 
 .project-Text {
     display: flex;
     align-items: baseline;
-
 }
 
 h5 {
@@ -159,27 +182,40 @@ h5 {
 }
 
 .about {
-    height: 150px;
     margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    
 }
 
+
+
+/***** Skills  ****/
 .skills {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: auto;
     background: #F4F4F4;
-    padding: 36.5px;
+    padding: 7%;
 }
 
 .skill-container {
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 36px;
 }
+
+.skills h4 {
+    color: #ae0618;
+}
+
 .code {
-    width: 150px;
+    width: 48.5%;
     height: auto;
-    margin-left: 30px;
-    margin-right: 5px;
-    border: 1px solid black;
+   
+    border: 1px solid black; /***take away later, just for positioning**/
     text-align: center;
 }
 .code p {
@@ -188,11 +224,10 @@ h5 {
     color: #000000;
 }
 .toolbox {
-    width: 150px;
+    width: 48.5%;
     height: auto;
     margin-left: 5px;
-    margin-right: 30px;
-    border: 1px solid black;
+    border: 1px solid black; /***take away later, just for positioning**/
     text-align: center;
 }
 .toolbox p {
@@ -201,12 +236,10 @@ h5 {
     color: #000000;
 }
 .more {
-    width: 150px;
+    width: 48.5%;
     height: auto;
-    margin-top: 36.5px;
-    margin-right: 30px;
-    margin-left: 5px;
-    border: 1px solid black;
+   
+    border: 1px solid black;  /***take away later, just for positioning**/
     text-align: center;
 }
 .more p {
@@ -215,11 +248,10 @@ h5 {
     color: #000000;
 }
 .upcomming {
-    width: 150px;
+    width: 48.5%;
     height: auto;
     margin-right: 5px;
-    margin-left: 30px;
-    border: 1px solid black;
+    border: 1px solid black; /***take away later, just for positioning**/
     text-align: center;
 }
 .upcomming p {
@@ -228,135 +260,163 @@ h5 {
     color: #000000;
 }
 
+
+
+/**** Links to Stackoverflow, LinkedIn, Github *****/
 .media {
-    margin: 36.5px;
+    margin: 7% 0;
+    width: 100%;
 }
-.media-Icons {
-    /*display: flex;
-    flex-direction: row;
+.media-icons {
+    display: flex;
     justify-content: space-evenly;
-    margin-top: 36px; */
-
-    /***Susannas version***/
-   /* margin-top: 10%;
-    width: 40px;
-    height: 39px;
-    border-radius: 100%;
-    border: 2px solid #fa382f;*/
+    margin-top: 7%;
 }
 
-
-
-span .stack-Owerflow {
-    width: 70px;
-  height: 70px;
-  border: 3px solid #fa382f;
-  border-radius: 50%;
-  display: inline-block; 
-
-
-}
-span .git-hub {
-    width: 70px;
-  height: 70px;
-  border: 3px solid #fa382f;
-  border-radius: 50%;
-  display: inline-block; 
-}
-  /***Susannas version**/
-  /*color: white;
-  position: relative;
-  top: 7px;
-  left: 7px;
-  width: 20px;
-  height: 20px; */
-
-
-
-span svg {
-    margin: 11px 0 0 15px;
-}
-
-    
-
-
-/** HA kvar **/
-span svg path {
-    fill: #fa382f;
+.media-icon-circles{
+    border: 3px solid #ae0618;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
-/*
-svg {
-    /*top: 4712px;
-    left: 156px;*/
-    /*width: 59px;
-    height: 58px;*/
-    /*color: #FA382F;
-    background: #FFFFFF 0% 0% no-repeat padding-box;*/
-   /* border: 3px solid #FF0000;
-    border-radius: 50%;
-    opacity: 1;*/
-    /*background: transparent url('assets/iconmonstr-linkedin-1/iconmonstr-linkedin-1.png') 0% 0% no-repeat padding-box;*/
-    /*fill: #FA382F
-    width: 70px;
-    height: 70px;
-    border: 3px solid #fa382f;
-    border-radius: 50%;
-    display: inline-block;
-}*/
+.media-icon {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+  }
 
+  .icon-text {
+     color: #ae0618;
+     display: flex;
+     justify-content: space-evenly;
+  }
 
-/*.media, .a {
-    fill: #FA382F;
-}*/
-
-/*img.stack-Icon {
-padding: 10px;
-} */
-
-
-/*
-.stack-Owerflow {
-    top: 4712px;
-    left: 259px;
-    width: 59px;
-    height: 58px;
-    /*background: grey;*/
-    /*background: #FA382F 0% 0% no-repeat padding-box;*/
-   /* border: 3px solid #FF0000;
-    opacity: 1;
-    fill: #FA382F;
-}*/
-
+/*****Footer *****/
 footer {
+    width: 100%;
     background-color: #f2d3da;
-    color: #FFFFFF;
+    color: black ; /* #FFFFFF;*/
     opacity: 1;
-    padding: 36.5px;
+    padding: 7%;
     text-align: center;
-    /*font: Bold 17px/29px Roboto;*/
-    font-family: Roboto;
-    font-size: 17px;
-    font-display: bold;
+    font: Bold 17px/29px Roboto;
     letter-spacing: 0;
    
 }
 
 
-@media (min-width:651) {
-    h3 {
-        font: Bold 48px/58px Montserrat;
-    }
+@media (min-width: 668px) {
+header {
+    height: 655px;
+}
+.header-Icons {
+    padding-right: 15%;
+}
 
-    .greet {
-        width: 1088px;
-        height: 192px;
-        font-size: 30px;
-    }  
-    .greet p {
-        font: Regular 30px/50px Montserrat;
-    }
-    .one, .two, .three, .four {
-       
-        margin: 36px;
-    }
+header h1 {
+    margin-left: 18.5%;
+    font: Bold 83px/101px Montserrat;
+    letter-spacing: 0;
+}
+header p {
+    font-family: Roboto;
+    font-size: 28px;
+}
+
+header h6 {
+    font: Bold 28px/33px Roboto;
+    letter-spacing: 1.12px;
+
+}
+.name {
+    
+    margin-left: 15%;
+}
+
+
+h3 {
+    font-family: Montserrat;
+    font-size: 200%;
+}
+
+.profile-img {
+    margin-right: 15%;
+    width: 300px;
+    height: 300px;
+    margin-top: 0px;
+}
+
+.greet {
+    height: auto;
+    font-size: 30px;
+    padding: 15%;
+}  
+.greet p {
+    font-family: Montserrat;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+
+.tech h4 {
+    font-family: Montserrat;
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.project-Container {
+    padding-top: 7%;
+}
+
+.one, .two  {
+    margin: 1% 1%
+}
+
+.three, .four {
+    margin: 1%;   
+}
+
+.code, .toolbox, .upcomming, .more {
+    width: 32%;
+    margin: 0;
+}
+
+.media-icon-circles {
+    width: 100px;
+    height: 100px;
+}
+
+.media-icons {
+    margin: 7% 15% 0 15%;
+}
+.media-icon {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.icon-text {
+    font: Bold 25px/41px Roboto;
+    margin: 0 15% 0 13%;
+}
+
+footer {
+
+    font: Regular 30px/50px Montserrat;
+}
+
+
+
+
+}
+
+
+
+
+
+
 }
