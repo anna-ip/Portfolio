@@ -100,7 +100,7 @@ h3 {
     color:#FFFFFF;
     background: #ae0618 0% 0% no-repeat padding-box;
     opacity: 1;
-    width: fit-content;
+    width: max-content;
     margin: auto;
     padding: 0.5%;
     
@@ -163,7 +163,14 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 7%;
 }
+
+button {
+   color: #ae0618;
+   font-size: 15px; 
+}
+
 
 .one, .two, .three, .four {
     border: 1px solid black;
@@ -178,7 +185,13 @@ h3 {
 
 .project-first-word {
     color: #ae0618;
+    font: Bold 15px Roboto;
 
+}
+
+.project-Text p {
+    font-family: Regular 25px/41px Roboto;
+    font-size: 17px;
 }
 
 h5 {
@@ -328,13 +341,21 @@ a {
 footer {
     width: 100%;
     background-color: #f2d3da;
-    color: black ; /* #FFFFFF;*/
+    color: black ;
     opacity: 1;
     padding: 7%;
     text-align: center;
-    font: Bold 17px/29px Roboto;
-    letter-spacing: 0;
-   
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0;   
+}
+h6 span {
+    font-weight: bold;
+}
+
+footer a {
+    color: black;
 }
 
 
@@ -431,6 +452,11 @@ header div {
 
 .project-Container {
     padding-top: 7%;
+}
+
+.project-Text p {
+    font-size: 1.5vw;
+
 }
 
 .one, .two  {
