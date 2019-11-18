@@ -169,11 +169,13 @@ h3 {
 button {
    color: #ae0618;
    font-size: 15px; 
+   border-style: none;
+   background: none;
 }
 
 
 .one, .two, .three, .four {
-    border: 1px solid black;
+    /*border: 1px solid black;*/ /* border to get help during styling */
     width: 300px;
     margin-top: 42px;
 }
@@ -190,20 +192,29 @@ button {
 }
 
 .project-Text p {
-    font-family: Regular 25px/41px Roboto;
+    font-family: Roboto;
     font-size: 17px;
 }
 
 h5 {
     width: fit-content;
     height: 17px;
+    font: Roboto;
+    font-size: 10px;
+    font-weight: 400;
     background: #FDDFE7 0% 0% no-repeat padding-box;
     opacity: 1;
+    margin-right: 2px;
 }
 
 .technique{
     display: flex;
-    justify-content: space-evenly;
+}
+
+.other-projects-container h3 {
+    color: #ae0618;
+    font-size: 22px;
+    background: none;
 }
 
 /***** About  ****/
@@ -298,7 +309,7 @@ h5 {
 
 /**** Links to Stackoverflow, LinkedIn, Github *****/
 .media {
-    margin: 7% 0;
+    margin: 7%;
     width: 100%;
 }
 
@@ -346,7 +357,7 @@ footer {
     padding: 7%;
     text-align: center;
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 0;   
 }
@@ -358,6 +369,7 @@ footer a {
     color: black;
 }
 
+/********* Media ***********/
 
 @media (min-width: 668px) {
 header {
@@ -467,6 +479,10 @@ header div {
     margin: 1%;   
 }
 
+.other-projects-container h3 {
+font-size: 2.5vw;
+}
+
 .about {
     margin:15%;
 }
@@ -505,9 +521,9 @@ header div {
 }
 
 
-footer {
-
-    font: Regular 30px/50px Montserrat;
+footer h6 {
+font-family:Montserrat;
+font-size: 18px;
 }
 
 
