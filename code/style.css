@@ -20,6 +20,7 @@ header {
     color: #FFFFFF;
     
 }
+
 /**** Icons in the Header ****/
 .circles{
     border: 3px solid #FFFFFF;
@@ -31,11 +32,12 @@ header {
     justify-content: center;
     align-items: center;
   }
-  .icon{
+
+.icon{
     width: 20px;
     height: 20px;
     padding: 8px;
-  }
+}
 
 .header-Icons {
     display: flex;
@@ -67,7 +69,6 @@ header h1 {
     text-align: left;
     font: Bold 40px/49px Montserrat;
     letter-spacing: 0;
-    /*color: #FFFFFF;*/
     opacity: 1;
     z-index: 0;
 }
@@ -103,14 +104,12 @@ h3 {
     width: max-content;
     margin: auto;
     padding: 0.5%;
-    
 }
 
 .greet {
     background: #F4F4F4;
     z-index: -1;
     position: inherit;
-   
 }
 
 .greet p {
@@ -146,6 +145,7 @@ h3 {
     color: #000000;
     opacity: 1;
     margin-top: 36.5px;
+    line-height: 160%;
 }
 
 
@@ -173,11 +173,15 @@ button {
    background: none;
 }
 
-
-.one, .two, .three, .four {
+.zero, .one, .two, .three, .four {
     /*border: 1px solid black;*/ /* border to get help during styling */
     width: 300px;
     margin-top: 42px;
+}
+
+.four img {
+    width: 298px;
+    border: 1px solid #f47775;
 }
 
 .project-Text {
@@ -188,7 +192,6 @@ button {
 .project-first-word {
     color: #ae0618;
     font: Bold 15px Roboto;
-
 }
 
 .project-Text p {
@@ -224,8 +227,13 @@ h5 {
     width: 100%;
     height: 150px;
     margin: 7%;    
+    padding: 0 16%;
 }
 
+
+.about-date {
+    color: #ae0618;
+}
 
 
 /***** Skills  ****/
@@ -252,7 +260,6 @@ h5 {
 .code {
     width: 48.5%;
     height: auto;
-   
     /* border: 1px solid black; *****take away later, just for positioning**/
     text-align: center;
 }
@@ -280,8 +287,7 @@ h5 {
 .more {
     width: 48.5%;
     height: auto;
-   
-    /*border: 1px solid black;  **take away later, just for positioning**/
+   /*border: 1px solid black;  **take away later, just for positioning**/
     text-align: center;
 }
 
@@ -361,6 +367,7 @@ footer {
     font-weight: 400;
     letter-spacing: 0;   
 }
+
 h6 span {
     font-weight: bold;
 }
@@ -413,10 +420,10 @@ header h6 {
     letter-spacing: 1.12px;
     margin: 0 0 0 17.8px;
 }
+
 .name {
     padding-top: 250px;
 }
-
 
 h3 {
     font-family: Montserrat;
@@ -436,12 +443,12 @@ header div {
  
 }
 
-
 .greet {
     height: auto;
     font-size: 30px;
     padding: 15%;
-}  
+} 
+
 .greet p {
     font-family: Montserrat;
     font-size: 80%;
@@ -468,9 +475,9 @@ header div {
 
 .project-Text p {
     font-size: 1.5vw;
-
 }
 
+/***add zero and so on **/
 .one, .two  {
     margin: 1% 1%
 }
@@ -478,6 +485,7 @@ header div {
 .three, .four {
     margin: 1%;   
 }
+
 
 .other-projects-container h3 {
 font-size: 2.5vw;
@@ -520,10 +528,9 @@ font-size: 2.5vw;
     margin-top: 15px;
 }
 
-
 footer h6 {
-font-family:Montserrat;
-font-size: 18px;
+    font-family:Montserrat;
+    font-size: 18px;
 }
 
 
