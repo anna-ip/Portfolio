@@ -225,14 +225,18 @@ h5 {
 .about {
     margin-top: 50px;
     width: 100%;
-    height: 150px;
+    height: auto;
     margin: 7%;    
     padding: 0 16%;
 }
 
-
 .about-date {
     color: #ae0618;
+}
+
+.about p {
+    text-align: left;
+    padding-top: 4%;
 }
 
 
@@ -478,7 +482,7 @@ header div {
 }
 
 /***add zero and so on **/
-.one, .two  {
+.zero, .one, .two  {
     margin: 1% 1%
 }
 
@@ -493,6 +497,10 @@ font-size: 2.5vw;
 
 .about {
     margin:15%;
+}
+
+.about p {
+    font-size: 1.5vw;
 }
 
 .skills {
