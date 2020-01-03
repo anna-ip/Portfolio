@@ -125,6 +125,24 @@ h3 {
     margin: 0;
 }
 
+.line{
+    position: relative;
+    top: -10px;
+    font-weight: 900;
+    color: #ae0618;
+}
+
+.circle{
+    width: 6px;
+    height: 6px;
+    padding: 5px;
+    position: relative;
+    margin-right: 5px;
+    top: -1px;
+    background-color: #ae0618;
+    border-radius: 50%;
+    display: inline-block;
+}
 
 
 /**** Tech skills part   ****/
