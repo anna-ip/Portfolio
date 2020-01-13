@@ -402,8 +402,9 @@ footer a {
 
 @media (min-width: 668px) {
 header {
-    height: 655px;
+    height: 200px;
     padding: 15%;
+    padding-top: 5%;
 }
 
 .header-Icons {
@@ -444,7 +445,7 @@ header h6 {
 }
 
 .name {
-    padding-top: 250px;
+    padding-top: 50px;
 }
 
 h3 {
@@ -458,27 +459,26 @@ header div {
 
 .profile-img {
     margin-right: 0px;
-    width: 300px;
-    height: 300px;
-    top: 100px;
+    width: 250px;
+    height: 250px;
+    top: -80px;
     position: relative;
- 
 }
 
 .greet {
     height: auto;
     font-size: 30px;
-    padding: 15%;
+    padding: 8%;
 } 
 
 .greet p {
     font-family: Montserrat;
-    font-size: 80%;
+    font-size: 70%;
     font-weight: 400;
 }
 
 .tech {
-    margin: 15%;
+    margin: 8%;
 }
 
 .tech h4 {
@@ -488,7 +488,7 @@ header div {
 }
 
 .projects {
-    padding:15%;
+    padding: 8%;
 }
 
 .project-Container {
@@ -496,7 +496,7 @@ header div {
 }
 
 .project-Text p {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 /***add zero and so on **/
@@ -507,6 +507,13 @@ header div {
 .three, .four {
     margin: 1%;   
 }
+.project-first-word {
+    font-size: 1vw; 
+}
+
+h5 {
+    font-size: 1.2vw;  
+}
 
 
 .other-projects-container h3 {
@@ -514,15 +521,15 @@ font-size: 2.5vw;
 }
 
 .about {
-    margin:15%;
+    margin:8%;
 }
 
 .about p {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .skills {
-    padding:15%;
+    padding:8%;
 }
 
 .code, .toolbox, .upcomming, .more {
