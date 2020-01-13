@@ -230,12 +230,30 @@ h5 {
 
 .technique{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .other-projects-container h3 {
     color: #ae0618;
     font-size: 22px;
     background: none;
+}
+
+.other-proj-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.other-projects-description{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.other-proj-1 p {
+    font-family: Roboto;
+    font-size: 17px;
+    margin: 0;
 }
 
 /***** About  ****/
@@ -498,6 +516,9 @@ header div {
 .project-Text p {
     font-size: 1.3vw;
 }
+.other-proj-1 p {
+    font-size: 1.3vw;
+}
 
 /***add zero and so on **/
 .zero, .one, .two  {
@@ -508,16 +529,20 @@ header div {
     margin: 1%;   
 }
 .project-first-word {
-    font-size: 1vw; 
+    font-size: 1.2vw; 
 }
 
 h5 {
-    font-size: 1.2vw;  
+    font-size: 1.1vw;  
+    margin: 2px 0.5vw 2px 0;
 }
-
 
 .other-projects-container h3 {
 font-size: 2.5vw;
+}
+
+.other-proj-1 {
+    margin: 3% 15%;
 }
 
 .about {
