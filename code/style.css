@@ -6,6 +6,7 @@ body {
     margin: 0;
 }
 .top-part {
+    width: 100%;
     height: auto;
 }
 /*** Header ****/
@@ -14,12 +15,15 @@ header {
     flex-direction: column;
     height: 508px;
     background-image: url("assets/adrien-converse-FWhTeWRCeis-unsplash_flip.jpg");
+    /* -webkit-transform: rotate(180deg); */
+    /* transform: rotate(180deg); */
     /* background-image: url("assets/laura-vinck-Hyu76loQLdk-unsplash.jpg"); */
     z-index: -1;
     background-size: cover;
-    background-color: #023e2d;
+    background-color: #C1A6AA;
     color: #FFFFFF;
     background-position-y: center;
+    
     
 }
 
@@ -140,7 +144,7 @@ h3 {
     position: relative;
     margin-right: 5px;
     top: -1px;
-    background-color: #a64e9b;;
+    background-color: #a64e9b;
     border-radius: 50%;
     display: inline-block;
 }
@@ -165,6 +169,10 @@ h3 {
     opacity: 1;
     margin-top: 36.5px;
     line-height: 160%;
+}
+
+.tech-word {
+    color: #a64e9b;
 }
 
 
@@ -198,11 +206,11 @@ button {
     margin-top: 42px;
 }
 
-.four img {
+/* .four img {
     width: 298px;
     border: 1px solid #f47775;
     z-index: -1;
-}
+} */
 
 .img-container {
     position: relative;
@@ -224,7 +232,9 @@ h2{
 }
 
 .project-first-word {
-    color: #614348;
+    /* color: #614348; */
+    /* color: #058e50; */
+    color: #a64e9b;
     font: Bold 15px Roboto;
 }
 
@@ -242,6 +252,7 @@ h5 {
     background: #FDDFE7 0% 0% no-repeat padding-box;
     opacity: 1;
     margin-right: 2px;
+    padding: 0.5px;
 }
 
 .technique{
@@ -250,7 +261,8 @@ h5 {
 }
 
 .other-projects-container h3 {
-    color: #a27179;
+    /* color: #a27179; */
+    color: #a64e9b;
     font-size: 22px;
     background: none;
 }
@@ -289,14 +301,23 @@ h5 {
     flex-direction: row;
     margin-top: 42px;
 }
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+   
+}
+
 .about-title {
     font-family: Roboto;
     font-weight: bold;
-font-size: 15px;
+    font-size: 15px;
 } 
 
 .about-date {
-    color: #a27179;
+    /* color: #a27179; */
+    /* color: #058e50; */
+    color: #a64e9b;
 }
 
 .about p {
@@ -323,7 +344,9 @@ font-size: 15px;
 }
 
 .skills h4 {
-    color: #a27179;
+    /* color: #a27179; */
+    /* color: #058e50; */
+    color: #a64e9b;
 }
 
 .code {
@@ -348,7 +371,8 @@ font-size: 15px;
 }
 
 .toolbox p {
-    font: Regular 17px/29px Roboto;
+    font-family: Roboto;
+    font-size:  17px;
     letter-spacing: 0;
     color: #000000;
 }
@@ -395,7 +419,8 @@ font-size: 15px;
 }
 
 .media-icon-circles{
-    border: 3px solid #815a60;
+    /* border: 3px solid #815a60; */
+    border: 3px solid #a64e9b;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -415,7 +440,8 @@ font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #815a60;
+    /* color: #815a60; */
+    color: #a64e9b;
 }
 
 a {
@@ -426,7 +452,8 @@ a {
 /*****Footer *****/
 footer {
     width: 100%;
-    background-color: #C1A6AA;
+    /* background-color: #C1A6AA; */
+    background-color: #4a7964;
     color: black ;
     opacity: 1;
     padding: 7%;
@@ -438,19 +465,23 @@ footer {
 }
 
 h6 span {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 footer a {
     color: black;
 }
 
-/********* Media ***********/
+footer h3 {
+    background: none;
+}
+
+/*********************** Media *************************/
 
 @media (min-width: 668px) {
 header {
     height: 200px;
-    padding: 15%;
+    padding: 22%;
     padding-top: 5%;
 }
 
@@ -475,12 +506,14 @@ header h1 {
     letter-spacing: 0;
     line-height: normal;
     padding-top: 5.5%;
+    margin-left: 0px;
 }
 
 header p {
     font-family: Roboto;
     font-size: 1.5vw;
     letter-spacing: 1.12px;
+    margin-left: 0px;
 }
 
 header h6 {
@@ -506,16 +539,16 @@ header div {
 
 .profile-img {
     margin-right: 0px;
-    width: 250px;
-    height: 250px;
-    top: -80px;
+    width: 320px;
+    height: 320px;
+    top: -19px;
     position: relative;
 }
 
 .greet {
     height: auto;
     font-size: 30px;
-    padding: 8% 13%;
+    padding: 8% 22%;
 } 
 
 .greet p {
@@ -525,7 +558,7 @@ header div {
 }
 
 .tech {
-    margin: 8% 13%;
+    margin: 8% 22%;
 }
 
 .tech h4 {
@@ -535,7 +568,7 @@ header div {
 }
 
 .projects {
-    padding: 8% 13%;
+    padding: 8% 22%;
 }
 
 .project-Container {
@@ -544,6 +577,7 @@ header div {
 
 .project-Text p {
     font-size: 1.3vw;
+    margin-top: 42px;
 }
 .other-proj-1 p {
     font-size: 1.3vw;
@@ -551,11 +585,18 @@ header div {
 
 /***add zero and so on **/
 .zero, .one, .two  {
-    margin: 1% 1%
+    margin: 1% 1%;
+    width: 480px;
 }
 
 .three, .four {
-    margin: 1%;   
+    margin: 1%;  
+    width: 480px; 
+}
+
+.projects-img {
+    width: 480px;
+    height: 330px;
 }
 .project-first-word {
     font-size: 1.2vw; 
@@ -563,11 +604,12 @@ header div {
 
 h5 {
     font-size: 1.1vw;  
-    margin: 2px 0.5vw 2px 0;
+    margin: 2px 0.5vw 3px 0;
+    height: auto;
 }
 
 .other-projects-container h3 {
-font-size: 2.5vw;
+font-size: 200%;
 }
 
 .other-proj-1 {
@@ -575,25 +617,47 @@ font-size: 2.5vw;
 }
 
 .about {
-    margin: 8% 13%;
+    margin: 8% 22%;
+}
+
+.about-box {
+    width: 480px;
+    height: auto;
+    margin: 15px;
+}
+
+.about-img {
+    width: 480px;
+    height: auto;
 }
 
 .about p {
     font-size: 1.2vw;
 }
 
-.skills {
-    padding: 8% 13%;
+.about-title {
+    font-size: 22px;
 }
 
+.skills {
+    padding: 8% 22%;
+}
+
+.skills h4 {
+    font-size: 1.4vw;
+}
 .code, .toolbox, .upcomming, .more {
     width: 32%;
     margin: 0;
 }
 
+.skill-container p {
+    font-size: 1.3vw;
+}
+
 .media-icon-circles {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
 }
 
 .media-icons {
@@ -601,23 +665,30 @@ font-size: 2.5vw;
 }
 
 .media-icon {
-    width: 40px;
-    height: 40px;   
+    width: 56px;
+    height: auto;   
 }
 
 .media-icon-text {
-    font: Bold 25px/41px Roboto;
-    width: max-content;
-    margin: 0 3% 0 3%
+   width: 220px;
 }
 
 .media-icon-text h6 {
     margin-top: 15px;
+    font: Bold 25px Roboto;
+    width: max-content;
+    margin: 8% 3% 0 3%
+}
+
+h6 span {
+    font-weight: 400;
 }
 
 footer h6 {
-    font-family:Montserrat;
-    font-size: 18px;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 
