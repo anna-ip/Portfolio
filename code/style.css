@@ -597,8 +597,9 @@ header div {
 
 .projects-img {
     width: 26vw;
-    height: auto;
+    height: 18vw;
 }
+
 .project-first-word {
     font-size: 1.2vw; 
 }
