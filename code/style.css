@@ -297,6 +297,7 @@ h5 {
     /* padding: 0 16%; */
 }
 .aboutContainer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 42px;
@@ -539,9 +540,9 @@ header div {
 
 .profile-img {
     margin-right: 0px;
-    width: 320px;
-    height: 320px;
-    top: -19px;
+    width: 20vw;
+    height: 20vw;
+    top: 2px;
     position: relative;
 }
 
@@ -621,13 +622,13 @@ font-size: 200%;
 }
 
 .about-box {
-    width: 480px;
+    width: 27vw;
     height: auto;
     margin: 15px;
 }
 
 .about-img {
-    width: 480px;
+    width: 27vw;
     height: auto;
 }
 
