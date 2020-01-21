@@ -587,17 +587,17 @@ header div {
 /***add zero and so on **/
 .zero, .one, .two  {
     margin: 1% 1%;
-    width: 480px;
+    width: 26vw;
 }
 
 .three, .four {
     margin: 1%;  
-    width: 480px; 
+    width: 26vw;
 }
 
 .projects-img {
-    width: 480px;
-    height: 330px;
+    width: 26vw;
+    height: auto;
 }
 .project-first-word {
     font-size: 1.2vw; 
