@@ -47,6 +47,7 @@ header {
     justify-content: flex-end;
     padding-top: 105px;
     position: relative;
+    margin-right: 37px;
 }
 
 .name {
@@ -123,20 +124,20 @@ h3 {
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
-    padding: 36.5px;
+    padding: 7%;
     margin: 0;
 }
 
 .line{
     position: relative;
-    top: -10px;
+    top: -9px;
     font-weight: 900;
     color: #a64e9b;;
 }
 
 .circle{
-    width: 6px;
-    height: 6px;
+    width: 3px;
+    height: 3px;
     padding: 5px;
     position: relative;
     margin-right: 5px;
@@ -288,18 +289,20 @@ padding-left: 0;
     margin-top: 50px;
     width: 100%;
     height: auto;
-    margin: 7%;    
+    margin-bottom: 7%;  
 }
 .aboutContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 42px;
 }
 
 .about-box {
     display: flex;
     flex-direction: column;
+    width: 300px;
 }
 
 .about-title {
@@ -308,6 +311,10 @@ padding-left: 0;
     font-size: 15px;
 } 
 
+.about-img-climbing {
+    object-fit: cover;
+    object-position: center;
+}
 .about-date {
     color: #a64e9b;
     text-transform: uppercase;
@@ -539,7 +546,7 @@ header div {
 .greet p {
     padding: 0;
     font-family: Montserrat;
-    font-size: 1.3vw;
+    font-size: 1.6vw;
     font-weight: 400;
     line-height: 1.6;
 }
@@ -566,6 +573,8 @@ header div {
     font-size: 1.3vw;
     margin-top: 20px;
     color: black;
+    font-weight: 400;
+    line-height: 1.4;
 }
 .other-proj-1 p {
     font-size: 1.3vw;
@@ -607,6 +616,8 @@ h5 {
 
 .aboutContainer {
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .about {
@@ -614,22 +625,31 @@ h5 {
 }
 
 .about-box {
-    width: 27vw;
+    width: 24vw;
     height: auto;
     margin: 15px;
 }
 
 .about-img {
-    width: 27vw;
+    width: 25vw;
     height: auto;
+}
+
+.about-img-climbing{
+    width: 25vw;
+    height: 16.6vw;
+    object-fit: cover;
+    object-position: center;
 }
 
 .about p {
     font-size: 1.2vw;
+    font-family: Roboto;
+    line-height: 1.5;
 }
 
 .about-title {
-    font-size: 22px;
+    font-size: 1.2vw;
 }
 
 .skills {
@@ -679,9 +699,13 @@ h6 span {
 
 footer h6 {
     font-family: Montserrat;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.6;
+}
+
+footer h3 {
+    font-size: 150%;
 }
 
 
