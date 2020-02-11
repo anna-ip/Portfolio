@@ -197,8 +197,8 @@ button {
     background: none;
     color: #e81dcf;
     font-weight: 600;
+    text-decoration: underline;
 }
-
 .zero, .one, .two, .three, .four {
     width: 300px;
     margin-top: 42px;
@@ -253,10 +253,10 @@ h5 {
 }
 
 .other-projects-container h3 {
-    /* color: #a27179; */
     color: #a64e9b;
     font-size: 22px;
     background: none;
+    padding-bottom: 15px;
 }
 
 .other-proj-1 {
@@ -310,19 +310,50 @@ padding-left: 0;
     font-weight: bold;
     font-size: 15px;
 } 
-
-.about-img-climbing {
+.about-img-0 {
     object-fit: cover;
     object-position: center;
 }
 .about-date {
+    display: inherit;
     color: #a64e9b;
     text-transform: uppercase;
 }
-
-.about p {
+.about-p-0 {
     text-align: left;
     padding-top: 4%;
+}
+
+.more-thoughts-container {
+    width: 300px;
+}
+.more-thoughts-mobile {
+    color: #a64e9b;
+    font-size: 22px;
+    background: none;
+    padding-top: 20px;
+}
+
+.more-thoughts-h3 {
+    display: none;
+    color: #a64e9b;
+    font-size: 22px;
+    background: none;
+}
+.about-p-1, .about-p-2 {
+    display: none;
+}
+.about-img-1 {
+    display: none
+}
+
+.about-box-mobile{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.about-box-mobile br{
+    display: none;
 }
 
 
@@ -607,7 +638,7 @@ h5 {
 }
 
 .other-projects-container h3 {
-    font-size: 200%;
+    font-size: 180%;
 }
 
 .other-proj-1 {
@@ -620,6 +651,10 @@ h5 {
     align-items: flex-start;
 }
 
+.more-thoughts-mobile {
+    display: none;
+}
+
 .about {
     margin: 8% 22%;
 }
@@ -630,16 +665,21 @@ h5 {
     margin: 15px;
 }
 
-.about-img {
-    width: 25vw;
-    height: auto;
-}
-
-.about-img-climbing{
+.about-img-0 {
     width: 25vw;
     height: 16.6vw;
     object-fit: cover;
     object-position: center;
+}
+
+.about-img-1 {
+    display: inherit;
+    width: 25vw;
+    height: auto;
+}
+
+.about-img-2 {
+    display: none
 }
 
 .about p {
@@ -648,8 +688,33 @@ h5 {
     line-height: 1.5;
 }
 
+.about-p-1 {
+    display: inherit;
+}
+
 .about-title {
     font-size: 1.2vw;
+}
+
+.more-thoughts-h3 {
+    font-size: 180%;
+    display: inherit;
+}
+
+.more-thoughts-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.more-thoughts-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.more-thoughts-text a{
+    text-decoration: underline;
 }
 
 .skills {
