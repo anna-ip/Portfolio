@@ -242,7 +242,7 @@ h5 {
     font-weight: 400;
     background: #FDDFE7 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-right: 2px;
+    margin: 0 2px 2px;
     padding: 0.5px;
     text-transform: uppercase;
 }
